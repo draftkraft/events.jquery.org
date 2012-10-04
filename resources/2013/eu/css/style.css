@@ -1,0 +1,147 @@
+@font-face{font-family:'RokkittLight';src:url('../fonts/Rokkitt-Light.otf') format('opentype');font-weight:lighter;font-style:normal;}html{background-color:#272427;font-family:'RokkittLight','Rokkitt',sans-serif;}
+a{color:#3e5972;}
+b{font-weight:bold;}
+#cinema{min-width:1150px;overflow-y:hidden;}
+.content{width:960px;margin:auto;}
+#spotlight{position:relative;left:600px;top:-100px;width:350px;height:250px;background:url(../img/spotlight.png) no-repeat;}
+#jquery-eu-logo{width:210px;height:54px;background-color:#1F1E1C;position:relative;left:750px;top:30px;padding:5px;}
+#head{z-index:3;height:1100px;}
+#headline{position:relative;top:-30px;}#headline li{margin:0 350px 12px 0;}
+#headline li span{background-color:#1f1e1c;color:#caefe8;font-size:48px;padding:2px 20px 2px 20px;}
+#navigationcontainer{width:860px;height:325px;top:-25px;left:80px;position:relative;}
+#navigation li a,#navigation li span{font-size:18px;font-family:'Arial';font-style:italic;text-decoration:none;text-transform:uppercase;padding:2px 4px;color:#cccccc;background-color:#1F1E1C;position:relative;top:14px;left:33%;z-index:9;}
+#navigation .deact{background-color:#888;}
+#navigation .trainings{width:240px;height:90px;position:absolute;left:0px;top:188px;background:url(../img/tile_gray.png);z-index:10;}
+#navigation .sessions{width:240px;height:90px;position:absolute;top:141px;left:124px;background:url(../img/tile_somegray.png);z-index:9;}
+#navigation .speakers{width:240px;height:90px;position:absolute;top:94px;right:372px;background:url(../img/tile_anothergray.png);z-index:8;}
+#navigation .register{width:489px;height:184px;position:absolute;top:0px;right:0px;background:url(../img/tile_big_azzurro.png);z-index:7;}
+#navigation .register a{font-size:24px;}
+#navigation .location{width:240px;height:90px;position:absolute;right:0;top:142px;background:url(../img/tile_darkgray.png);}
+#navigation .premium-sponsors{width:489px;height:184px;position:absolute;right:124px;top:141px;background:url(../img/tile_big_someblue.png);overflow:hidden;z-index:10;}
+#navigation .premium-sponsors a{font-size:24px;z-index:11;}
+#navigation .sponsordesc{position:relative;font-size:14px;top:40px;left:46px;}
+#intro{position:relative;top:-750px;height:2000px;z-index:5;}
+#meet-jquery{font-family:'Stint Ultra Condensed',cursive;}
+#vienna{position:relative;left:340px;top:-1300px;width:620px;text-align:center;color:#2e3842;line-height:1.4em;z-index:89;}#vienna h2{font-size:96px;text-transform:uppercase;color:#2f3646;line-height:30px;position:relative;}
+#vienna p{padding:0px 50px 20px 50px;font-size:22px;line-height:30px;}
+#vienna .star{margin:40px 0 20px;}
+#vienna .teaser{font-size:30px;font-weight:bold;color:#303644;line-height:40px;}
+#vienna .meets{font-size:48px;text-transform:lowercase;width:552px;line-height:94px;display:inline-block;background:url(../img/line.png) no-repeat center;}
+#steffl{z-index:3;position:relative;top:300px;left:60px;width:350px;height:1000px;background:url('../img/steffl.png') 30% 0 no-repeat;}
+#paper{z-index:4;position:relative;top:-88px;left:-45px;width:513px;height:760px;background:url('../img/paper-cover.png') 50% 0 no-repeat;}
+#paperbackground{z-index:2;position:relative;top:-1600px;height:760px;background-color:#9c948b;}
+#speakers{z-index:5;position:relative;top:-2370px;height:2120px;}#speakers .content{z-index:10;position:relative;top:-920px;height:1900px;}
+#speakersbackground{z-index:5;position:relative;top:800px;height:1020px;background-color:#231f20;}
+.speaker{z-index:9;position:relative;width:490px;height:184px;}.speaker .name,.speaker .company{position:relative;top:46px;left:245px;}
+.speaker .name{font-family:"Quicksand";font-size:24px;font-style:italic;background-color:#000;color:#fff;line-height:34px;padding-left:6px;padding-right:6px;}
+.speaker .company{font-family:"Rokkitt";color:#678397;font-size:20px;line-height:22px;padding:2px;padding-left:9px;}
+.speaker .bio{display:none;}
+#speaker01{top:368px;left:115px;background:url('../img/speaker01.png') 50% 0 no-repeat;}
+#speaker02{top:279px;left:363px;background:url('../img/speaker02.png') 50% 0 no-repeat;}
+#speaker03{top:184px;left:-132px;background:url('../img/speaker03.png') 50% 0 no-repeat;}
+#speaker04{top:95px;left:118px;background:url('../img/speaker04.png') 50% 0 no-repeat;}
+#speaker05{top:6px;left:366px;background:url('../img/speaker05.png') 50% 0 no-repeat;}
+#speaker06{top:-273px;left:614px;background:url('../img/speaker06.png') 50% 0 no-repeat;}
+#speaker07{top:-276px;left:-130px;background:url('../img/speaker07.png') 50% 0 no-repeat;}
+#speaker08{top:-365px;left:118px;background:url('../img/speaker08.png') 50% 0 no-repeat;}
+#speaker09{top:-463px;left:614px;background:url('../img/speaker09.png') 50% 0 no-repeat;}
+#speaker10{top:-552px;left:366px;background:url('../img/speaker10.png') 50% 0 no-repeat;}
+#speaker11{top:-644px;left:-130px;background:url('../img/speaker00.png') 50% 0 no-repeat;}
+#speaker12{top:-733px;left:118px;background:url('../img/speaker00.png') 50% 0 no-repeat;}
+#speaker13{top:-822px;left:366px;background:url('../img/speaker00.png') 50% 0 no-repeat;}
+#speaker14{top:-1101px;left:614px;background:url('../img/speaker00.png') 50% 0 no-repeat;}
+#speaker15{top:-1104px;left:-130px;background:url('../img/speaker00.png') 50% 0 no-repeat;}
+#speaker16{top:-1279px;left:614px;background:url('../img/speaker16.png') 50% 0 no-repeat;}
+#cloud1{z-index:8;top:-1720px;position:relative;height:1300px;}
+#cloud2{z-index:8;top:-2420px;position:relative;height:1260px;}
+#plane{position:relative;z-index:9;top:-3700px;left:200px;height:643px;width:764px;background:url(../img/plane.png) no-repeat;}
+#map{width:100%;z-index:-2;top:0px;height:1440px;}
+#location{z-index:9;position:relative;top:-2600px;height:1600px;}
+#locationmenu{font-family:'Rokkitt',sans-serif;top:500px;position:relative;}#locationmenu h1{font-size:97px;}
+#locationmenu ul{padding-top:40px;}
+#locationmenu li{padding:0 0 50px 35px;}
+#locationmenu li a{background-color:#1f1e1c;color:#fff;font-family:"Quicksand";font-size:24px;font-style:italic;margin:4px;padding:2px;text-decoration:none;}
+#venuemenu{background:url('../img/tile_small_red.png') 0 18px no-repeat;}
+#directionsmenu{background:url('../img/tile_small_bluegray.png') 0 18px no-repeat;}
+#accomodationmenu{background:url('../img/tile_small_viola.png') 0 18px no-repeat;}
+.pin{top:-2200px;z-index:-1;width:100%;height:90px;}
+#palais{background:url('../img/tile_big_red.png') 50% no-repeat;top:350px;text-align:center;}#palais span{top:-30px;position:relative;background-color:#1f1e1c;color:#fff;font-family:"Quicksand";font-size:24px;font-style:italic;margin:4px;padding:2px;display:inline-block;}
+#palais a{top:-26px;position:relative;}
+#palaisliechtenstein{top:350px;width:100%;z-index:-1;}
+.palais{width:960px;height:360px;color:white;padding-top:20px;display:none;z-index:10;}.palais .map{text-align:center;padding-top:60px;}
+.palais h2{font-size:200%;font-weight:bold;text-align:center;padding-top:10px;}
+.palais p{padding:10px 140px 10px 140px;line-height:1.2;text-align:center;}
+#palaislayertop{width:100%;height:0px;margin-top:-108px;background:url(../img/tile_huge_red_01.png) 50% top no-repeat;}
+#palaislayerbottom{width:100%;height:0px;background:url(../img/tile_huge_red_02.png) 50% bottom no-repeat;}
+#palaisclick{display:none;z-index:11;top:396px;left:50%;margin-left:-17px;width:34px;height:34px;cursor:pointer;}
+#palaisclick2{display:none;z-index:10;top:324px;left:50%;margin-left:-90px;height:62px;width:180px;cursor:pointer;}
+#bottom{z-index:8;position:relative;top:-3000px;height:1485px;font-size:22px;}#bottom .content{z-index:8;position:relative;top:-7200px;}
+#bottom h2{margin:20px 0 20px 0;font-size:300%;font-family:'Rokkitt',sans-serif;font-weight:bold;}
+#bottom h3{margin:35px 0 0 0;font-size:115%;font-family:'Rokkitt',sans-serif;font-weight:bold;}
+#bottom p{margin:10px 0 10px 0;}
+#bottom1{position:relative;top:-500px;height:803px;}
+#bottom2{position:relative;top:-500px;height:6500px;}
+#bottom3{position:relative;top:-500px;}
+#directions{float:right;position:relative;text-align:right;color:#f6f6f1;padding-right:30px;}
+#accomodation{position:relative;top:240px;font-size:22px;}
+#accomodation h3{font-size:120%;font-weight:bold;color:#ffffff;padding-left:130px;}
+#accomodation dl,#accomodation p{color:#b9bcbb;padding:20px 0 0 130px;}
+#accomodation dt{float:left;}
+#accomodation dd{padding-left:80px;}
+.hotel a,.hotel b,.premiumhotel a,.premiumhotel b{color:#ffffff;}
+.premiumhotel{width:500px;height:503px;float:left;background:url('../img/premiumhotel.png') 50% 0 no-repeat;}
+.premiumhotel{padding-top:300px;}
+.premiumhotel .stars{position:relative;top:72px;left:10px;}
+.premiumhotel .icon{position:relative;top:110px;left:-58px;}
+.stars li{float:left;}
+.hotel{font-size:80%;float:right;width:400px;height:350px;background:url('../img/hotel.png') 50% 0 no-repeat;}
+.hotel{padding-top:120px;}
+.hotel .icon{position:relative;top:110px;left:-58px;}
+.hotel .stars{position:relative;top:69px;left:20px;}
+#hotel2{z-index:1;}
+#hotel3{z-index:-1;position:relative;top:-135px;}
+#hotel3 a{padding-left:100px;}
+#hotel3 dl a{padding-left:0;}
+#restaurants{position:relative;top:180px;}
+.restaurant{float:left;color:#7bf9d1;position:relative;width:900px;}
+.restaurant p,.restaurant h3{padding-left:50px;}
+.restaurant ul{margin-top:40px;float:left;}
+#restaurants .black{float:right;text-align:right;color:#000;padding-right:30px;}
+#restaurants .black p,#restaurants .black h3{padding-right:50px;}
+#restaurants .black ul{margin-top:40px;float:right;}
+#leisure{position:relative;top:420px;color:#7bf9d1;}#leisure h3{color:#fff;font-family:'RokkittLight','Rokkitt',sans-serif;font-weight:lighter;float:right;padding:0 20px 0 0;margin:10px 0 0 0;width:100%;}
+.poi{text-align:right;float:left;margin:0 20px 0 20px;position:relative;}.poi .type{font-family:'Quicksand',Arial;font-size:18px;float:right;padding:10px 20px 0 0;width:100%;}
+.poi .icons{float:right;padding:20px 20px 0 0;}
+.poi1{top:-80px;}
+.poi3{top:-30px;}
+.poi6{top:-200px;}
+.poi7{top:-80px;}
+.hole1{padding:95px 0 0 0;min-height:265px;width:218px;background:url(../img/hole1.png) no-repeat;}
+.hole2{padding:95px 0 0 0;min-height:170px;width:214px;background:url(../img/hole2.png) 50% 0 no-repeat;}
+.hole3{padding:120px 0 0 0;min-height:170px;width:291px;background:url(../img/hole3.png) no-repeat;}
+.nofixed #cinema{height:12000px;}
+.nofixed #intro{top:-640px;height:1500px;}
+.nofixed #steffl{top:380px;}
+.nofixed #paper{top:185px;}
+.nofixed #paperbackground{top:-700px;height:300px;}
+.nofixed #speakers{top:-1300px;}
+.nofixed #cloud1{top:-1500px;}
+.nofixed #cloud2{top:-1640px;}
+.nofixed #plane{top:-3200px;}
+.nofixed #map{position:relative;top:-690px;}
+.nofixed .palais{height:0px;z-index:10;}
+.nofixed .palais .map{margin-top:60px;padding-top:0px;}
+.nofixed #palais{top:-1560px;position:relative;z-index:9;}
+.nofixed #palais span{cursor:pointer;}
+.nofixed #palaisliechtenstein{top:-1645px;z-index:9;position:relative;}
+.nofixed #locationmenu{top:-1360px;}
+.nofixed #location{top:-700px;z-index:5;}
+.nofixed #bottom{top:-2730px;}
+.nofixed #restaurants{top:180px;}
+.nofixed #leisure{top:460px;}
+.fixed #map{position:fixed;}
+.fixed #palaisclick{position:fixed;}
+.fixed #palaisclick2{position:fixed;}
+.fixed .pin{position:fixed;}
+.fixed #palais{position:fixed;}
+.fixed #palaisliechtenstein{position:fixed;}
