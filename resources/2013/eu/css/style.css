@@ -89,6 +89,7 @@ b{font-weight:bold;}
 #accomodation dt{float:left;}
 #accomodation dd{padding-left:80px;}
 .hotel a,.hotel b,.premiumhotel a,.premiumhotel b{color:#ffffff;}
+.partnerhotel{color:#b9bcbb;font-size:70%;position:relative;top:-100px;float:right;margin-right:20px;text-align:right;}
 .premiumhotel{width:500px;height:503px;float:left;background:url('../img/premiumhotel.png') 50% 0 no-repeat;}
 .premiumhotel{padding-top:300px;}
 .premiumhotel .stars{position:relative;top:72px;left:10px;}
