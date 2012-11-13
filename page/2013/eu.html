@@ -139,29 +139,30 @@
 							<span itemprop="name">createJS</span></span>
 						<p class="bio" itemprop="description"></p>
 					</li>
-					<li id="speaker11" class="speaker">
-						<span class="name">Propose</span><br><span class="name">a session</span><br />
-						<span class="company"><a href="http://www.google.com/recaptcha/mailhide/d?k=015geeflKGdAoKARC97gcP-Q==&amp;c=HNIlb4PLpd2NxH_-hFr2p6MX-gPhotYS33QZBEBDCmI=">send abstract</a></span>
-						<p class="bio"></p>
+					<li id="speaker11" class="speaker" itemscope itemtype="http://schema.org/Person">
+						<span class="name" itemprop="name">Golo</span><br><span class="name" itemprop="familyName">Roden</span><br />
+						<span class="company">consultant,</span><br /><span class="company">author</span>
+						<p class="bio" itemprop="description"></p>
 					</li>
-					<li id="speaker12" class="speaker">
-						<span class="name">Propose</span><br><span class="name">a session</span><br />
-						<span class="company"><a href="http://www.google.com/recaptcha/mailhide/d?k=015geeflKGdAoKARC97gcP-Q==&amp;c=HNIlb4PLpd2NxH_-hFr2p6MX-gPhotYS33QZBEBDCmI=">send abstract</a></span>
-						<p class="bio"></p>
+					<li id="speaker12" class="speaker" itemscope itemtype="http://schema.org/Person">
+						<span class="name" itemprop="name">Sascha</span><br><span class="name" itemprop="familyName">Wolter</span><br />
+						<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+							<span itemprop="name">Deutsche Telekom</span></span>
+						<p class="bio" itemprop="description"></p>
 					</li>
 					<li id="speaker13" class="speaker">
 						<span class="name">Propose</span><br><span class="name">a session</span><br />
-						<span class="company"><a href="http://www.google.com/recaptcha/mailhide/d?k=015geeflKGdAoKARC97gcP-Q==&amp;c=HNIlb4PLpd2NxH_-hFr2p6MX-gPhotYS33QZBEBDCmI=">send abstract</a></span>
+						<span class="company"><a href="http://jqueryeu.wufoo.com/forms/jquery-europe-2013/" target="_blank">send abstract</a></span>
 						<p class="bio"></p>
 					</li>
 					<li id="speaker14" class="speaker">
 						<span class="name">Propose</span><br><span class="name">a session</span><br />
-						<span class="company"><a href="http://www.google.com/recaptcha/mailhide/d?k=015geeflKGdAoKARC97gcP-Q==&amp;c=HNIlb4PLpd2NxH_-hFr2p6MX-gPhotYS33QZBEBDCmI=">send abstract</a></span>
+						<span class="company"><a href="http://jqueryeu.wufoo.com/forms/jquery-europe-2013/" target="_blank">send abstract</a></span>
 						<p class="bio"></p>
 					</li>
 					<li id="speaker15" class="speaker">
 						<span class="name">Propose</span><br><span class="name">a session</span><br />
-						<span class="company"><a href="http://www.google.com/recaptcha/mailhide/d?k=015geeflKGdAoKARC97gcP-Q==&amp;c=HNIlb4PLpd2NxH_-hFr2p6MX-gPhotYS33QZBEBDCmI=">send abstract</a></span>
+						<span class="company"><a href="http://jqueryeu.wufoo.com/forms/jquery-europe-2013/" target="_blank">send abstract</a></span>
 						<p class="bio"></p>
 					</li>
 					<li id="speaker16" class="speaker" itemscope itemtype="http://schema.org/Person">
@@ -174,8 +175,19 @@
 			</div>
 			<div id="cloud1"></div>
 			<div id="cloud2"></div>
-			<div id="plane"></div>
 		</div>
+			<div id="planecontainer">
+				<div id="plane"></div>
+				<div id="bookinfo"></div>
+				<div id="bookflight">
+					<p>Book your flights to the jQuery Europe online at <br />
+						<a href="http://www.austrian.com">www.austrian.com</a> and  <b>save 15 %</b> on all applicable fares! To do so, simply enter <br />
+						the following code in the <b>eVoucher</b> field on the Austrian homepage booking-engine:</p>
+					<h3>Code: JQE13</h3>
+					<p class="condition">Booking period: now until February 23rd, 2013. Valid for flights to Vienna and return as of<br />
+						February 14th, 2013 until February 28th, 2012 (final date for return flight)<br /> on OS flight numbers.</p>
+				</div>
+			</div>
 
 		<div id="map">&nbsp;</div>
 		<div id="palais" class="pin">
@@ -403,9 +415,9 @@
 		</div>
 		<div id="mapwaypoint" style="position:relative; top: -2700px;">
 		</div>
-		<div id="locationwaypointstart" style="position:relative; top: -8600px">
+		<div id="locationwaypointstart" style="position:relative; top: -10800px">
 		</div>
-		<div id="locationwaypointend" style="position:relative; top: -7600px">
+		<div id="locationwaypointend" style="position:relative; top: -6080px">
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -445,7 +457,7 @@
 				$('#speakers').parallax("50%", 0.2, true);
 				$('#cloud1').parallax("50%", 1.0, true);
 				$('#cloud2').parallax("50%", 1.0, true);
-					$('#plane').parallax("50%", 0.2, true);
+				$('#planecontainer').parallax("50%", 0.2, true);
 				// weired workaround for safari !?
 				setTimeout( function () {
 					$('#cinema').css('height', '10800px');
