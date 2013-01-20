@@ -8,11 +8,29 @@ html {
   background-color: #272427;
   font-family: 'RokkittLight', 'Rokkitt', sans-serif;
 }
+body {
+  font-size: 22px;
+}
 a {
   color: #3e5972;
 }
 b {
   font-weight: bold;
+}
+h2 {
+  margin: 20px 0 20px 0;
+  font-size: 300%;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: bold;
+}
+h3 {
+  margin: 35px 0 0 0;
+  font-size: 115%;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: bold;
+}
+p {
+  margin: 10px 0 10px 0;
 }
 #cinema {
   min-width: 1150px;
@@ -20,9 +38,35 @@ b {
   /*	height: 10800px; */
 
 }
+.cinema {
+  position: absolute;
+  top: 0;
+  z-index: 8;
+  overflow-x: hidden;
+  width: 100%;
+  height: 15200px;
+}
+#background {
+  width: 100%;
+  overflow: hidden;
+  height: 15200px;
+  min-width: 960px;
+}
 .content {
+  position: relative;
+  top: 0;
   width: 960px;
-  margin: auto;
+}
+@media screen and (max-width: 960px) {
+  .content {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  .content {
+    left: 50%;
+    margin-left: -480px;
+  }
 }
 #spotlight {
   position: relative;
@@ -92,7 +136,7 @@ b {
   left: 0px;
   top: 188px;
   background: url(../img/tile_gray.png);
-  z-index: 10;
+  z-index: 13;
 }
 #navigation .sessions {
   width: 240px;
@@ -101,7 +145,7 @@ b {
   top: 141px;
   left: 124px;
   background: url(../img/tile_somegray.png);
-  z-index: 9;
+  z-index: 11;
 }
 #navigation .speakers {
   width: 240px;
@@ -131,6 +175,7 @@ b {
   right: 0;
   top: 142px;
   background: url(../img/tile_darkgray.png);
+  z-index: 12;
 }
 #navigation .premium-sponsors {
   width: 489px;
@@ -142,15 +187,38 @@ b {
   overflow: hidden;
   z-index: 10;
 }
-#navigation .premium-sponsors a {
-  font-size: 24px;
-  z-index: 11;
-}
-#navigation .sponsordesc {
+#navigation .premium-sponsors .hostdesc {
   position: relative;
   font-size: 14px;
-  top: 40px;
-  left: 46px;
+  top: -30px;
+  left: 146px;
+}
+#navigation .premium-sponsors #host {
+  position: relative;
+  top: 16px;
+  left: 146px;
+  background-color: transparent;
+}
+#navigation .premium-sponsors #hostlogo {
+  width: 130px;
+}
+#navigation .premium-sponsors .sponsordesc {
+  position: relative;
+  font-size: 14px;
+  top: 30px;
+  left: 75px;
+}
+#navigation .premium-sponsors #premium {
+  position: relative;
+  top: -6px;
+  left: 110px;
+  background-color: transparent;
+}
+#navigation .premium-sponsors #premiumlogo {
+  width: 150px;
+}
+#navigation .premium-sponsors a {
+  z-index: 11;
 }
 #intro {
   position: relative;
@@ -158,13 +226,161 @@ b {
   height: 2000px;
   z-index: 5;
 }
+#performers {
+  height: 0px;
+  position: relative;
+}
+.msie #performers {
+  top: 280px;
+}
+#speakers {
+  position: relative;
+}
+#h2trainings {
+  width: 509px;
+  height: 170px;
+  background: url('../img/trainings.png') no-repeat;
+  position: absolute;
+  top: 30px;
+}
+#trainingdate {
+  width: 509px;
+  height: 195px;
+  position: relative;
+  top: 100px;
+  left: 460px;
+  display: inline-block;
+  background: url('../img/feb21.png') no-repeat;
+}
+#h2sessions {
+  width: 513px;
+  height: 184px;
+  background: url('../img/sessions.png') no-repeat;
+  position: absolute;
+  top: 700px;
+  left: 0;
+}
+#sessiondate {
+  width: 584px;
+  height: 221px;
+  position: absolute;
+  top: 760px;
+  left: 460px;
+  display: inline-block;
+}
+#sessiondate.friday {
+  background: url('../img/feb22.png') no-repeat;
+}
+#sessiondate.saturday {
+  background: url('../img/feb23.png') no-repeat;
+}
+#saturday {
+  display: none;
+}
+#break1,
+#break7 {
+  top: -110px;
+  left: 130px;
+  z-index: 90;
+}
+#break2,
+#break8 {
+  top: -156px;
+  left: 0;
+  z-index: 89;
+}
+#break3,
+#break9 {
+  top: -462px;
+  left: 375px;
+  z-index: 88;
+}
+#break4,
+#break10 {
+  top: -826px;
+  left: 123px;
+  z-index: 83;
+}
+#break5,
+#break11 {
+  top: -1000px;
+  left: 613px;
+  z-index: 83;
+}
+#break6,
+#break12 {
+  top: -1407px;
+  left: 250px;
+  z-index: 77;
+}
+#subevent1,
+#subevent9 {
+  top: -336px;
+  left: 361px;
+  z-index: 89;
+}
+#subevent2,
+#subevent10 {
+  top: -420px;
+  left: 130px;
+  z-index: 87;
+}
+#subevent3,
+#subevent11 {
+  left: 0px;
+  top: -552px;
+  z-index: 85;
+}
+#subevent4,
+#subevent12 {
+  top: -689px;
+  left: 373px;
+  z-index: 86;
+}
+#subevent5,
+#subevent13 {
+  top: -872px;
+  left: 130px;
+  z-index: 82;
+}
+#subevent6,
+#subevent14 {
+  top: -956px;
+  left: 361px;
+  z-index: 83;
+}
+#subevent7,
+#subevent15 {
+  top: -1180px;
+  left: 0px;
+  z-index: 84;
+}
+#subevent8,
+#subevent16 {
+  top: -1317px;
+  left: 373px;
+  z-index: 85;
+}
+#sessions {
+  position: relative;
+  top: 280px;
+  height: 1957px;
+  z-index: 7;
+}
+#sessionbackground {
+  position: relative;
+  top: 280px;
+  height: 2370px;
+  background-color: #cac3da;
+  background: url('../img/programm-bg.png') 50% repeat-y;
+}
 #meet-jquery {
   font-family: 'Stint Ultra Condensed', cursive;
 }
 #vienna {
   position: relative;
+  padding-top: 220px;
   left: 340px;
-  top: -1300px;
   width: 620px;
   text-align: center;
   color: #2e3842;
@@ -229,19 +445,13 @@ b {
   z-index: 5;
   position: relative;
   top: -2370px;
-  height: 2120px;
-}
-#speakers .content {
-  z-index: 10;
-  position: relative;
-  top: -920px;
-  height: 1900px;
+  height: 4250px;
 }
 #speakersbackground {
   z-index: 5;
   position: relative;
   top: 800px;
-  height: 1020px;
+  height: 1200px;
   background-color: #231f20;
 }
 .speaker {
@@ -249,130 +459,464 @@ b {
   position: relative;
   width: 490px;
   height: 184px;
+  font-size: 90%;
 }
-.speaker .name,
-.speaker .company {
+.speaker .background {
+  position: absolute;
+  width: 490px;
+  height: 184px;
+  pointer-events: none;
+}
+.speaker .speakermain {
+  position: absolute;
+}
+.speaker .speakermain .name,
+.speaker .speakermain .company {
   position: relative;
-  top: 46px;
+  top: 44px;
   left: 245px;
 }
-.speaker .name {
+.speaker .speakermain .name {
   font-family: "Quicksand";
   font-size: 24px;
   font-style: italic;
   background-color: #000;
   color: #fff;
-  line-height: 34px;
+  line-height: 32px;
   padding-left: 6px;
   padding-right: 6px;
+  cursor: pointer;
 }
-.speaker .company {
+.speaker .speakermain .company {
   font-family: "Rokkitt";
   color: #678397;
   font-size: 20px;
-  line-height: 22px;
+  /*			line-height: 22px;
+*/
   padding: 2px;
   padding-left: 9px;
 }
-.speaker .bio {
+.speaker .biowrapper {
   display: none;
+  background: url('../img/tile_huge_white.png') 50% no-repeat;
+  width: 2441px;
+  height: 918px;
+  position: absolute;
+  margin: 0px -973px;
+  z-index: -1;
+}
+.speaker .biowrapper .bio.leftside {
+  position: absolute;
+  margin: 200px 0px 0px 973px;
+  width: 720px;
+}
+.speaker .biowrapper .bio.leftside h3 {
+  margin: 0px 0px 15px 260px;
+}
+.speaker .biowrapper .bio.leftside .left {
+  width: 235px;
+  text-align: right;
+  float: left;
+  text-align: right;
+}
+.speaker .biowrapper .bio.leftside .left p.job {
+  font-weight: bold;
+}
+.speaker .biowrapper .bio.leftside .left p.sidedescription {
+  margin-top: 25px;
+  font-style: italic;
+}
+.speaker .biowrapper .bio.leftside .right {
+  width: 450px;
+  float: left;
+  margin-left: 25px;
+}
+.speaker .biowrapper .bio.rightside {
+  position: absolute;
+  margin: 200px 0px 0px 758px;
+  width: 720px;
+}
+.speaker .biowrapper .bio.rightside h3 {
+  margin: 0px 0px 15px 260px;
+}
+.speaker .biowrapper .bio.rightside .left {
+  width: 450px;
+  text-align: right;
+  float: left;
+  text-align: right;
+}
+.speaker .biowrapper .bio.rightside .left p.job {
+  font-weight: bold;
+}
+.speaker .biowrapper .bio.rightside .left p.sidedescription {
+  margin-top: 25px;
+  font-style: italic;
+}
+.speaker .biowrapper .bio.rightside .right {
+  width: 235px;
+  float: left;
+  margin-left: 25px;
+}
+.sessiondescription {
+  display: none;
+  background: url('../img/tile_huge_violett.png') 50% no-repeat;
+  width: 2441px;
+  height: 918px;
+  position: absolute;
+  margin-left: -851px;
+  margin-top: -178px;
+  z-index: -1;
+  color: #F4EEFB;
+}
+.sessiondescription .leftside.bio {
+  position: absolute;
+  margin: 200px 0px 0px 973px;
+  width: 720px;
+}
+.sessiondescription .leftside.bio .left {
+  width: 235px;
+  text-align: right;
+  float: left;
+  text-align: right;
+}
+.sessiondescription .leftside.bio .left p.job {
+  font-weight: bold;
+}
+.sessiondescription .leftside.bio .left p.sidedescription {
+  margin-top: 25px;
+  font-style: italic;
+}
+.sessiondescription .leftside.bio .right {
+  width: 450px;
+  float: left;
+  margin-left: 25px;
+}
+.sessiondescription .leftside.bio .close {
+  color: #DEB7CE;
+}
+.sessiondescription .rightside.bio {
+  position: absolute;
+  margin: 200px 0px 0px 758px;
+  width: 720px;
+}
+.sessiondescription .rightside.bio .left {
+  width: 450px;
+  text-align: right;
+  float: left;
+  text-align: right;
+}
+.sessiondescription .rightside.bio .left p.job {
+  font-weight: bold;
+}
+.sessiondescription .rightside.bio .left p.sidedescription {
+  margin-top: 25px;
+  font-style: italic;
+}
+.sessiondescription .rightside.bio .right {
+  width: 235px;
+  float: left;
+  margin-left: 25px;
+}
+.sessiondescription .rightside.bio .close {
+  color: #DEB7CE;
+}
+#saturday #break1 {
+  background: none;
+}
+.break {
+  background: url('../img/tile_big_break.png');
+  width: 489px;
+  height: 184px;
+  position: relative;
+}
+.break .time {
+  background: url('../img/clock_small.png') no-repeat;
+  width: 82px;
+  height: 110px;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  padding-top: 20px;
+  color: #322c3b;
+  z-index: 1;
+}
+.break .topic {
+  font-family: 'Rokkitt', sans-serif;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  line-height: 34px;
+  padding-left: 20px;
+  padding-right: 6px;
+  color: #f4eefb;
+  position: relative;
+  top: -50px;
+  left: 190px;
+}
+.subevent {
+  background: url('../img/tile_big_session.png') no-repeat;
+  width: 741px;
+  height: 278px;
+  position: relative;
+}
+.subevent .time {
+  background: url('../img/clock_big.png') no-repeat;
+  width: 114px;
+  height: 147px;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  padding-top: 30px;
+  color: #322c3b;
+  z-index: 1;
+}
+.subevent .speaker {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #deb7ce;
+  position: absolute;
+  top: 70px;
+  left: 240px;
+  cursor: pointer;
+}
+.subevent .topic {
+  font-family: 'Rokkitt', sans-serif;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  line-height: 34px;
+  padding-left: 20px;
+  padding-right: 6px;
+  color: #f4eefb;
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  cursor: pointer;
+  width: 310px;
 }
 #speaker01 {
   top: 368px;
   left: 115px;
+  z-index: 99;
+}
+#speaker01 .background {
   background: url('../img/speaker01.png') 50% 0 no-repeat;
 }
 #speaker02 {
   top: 279px;
   left: 363px;
+  z-index: 98;
+}
+#speaker02 .background {
   background: url('../img/speaker02.png') 50% 0 no-repeat;
 }
 #speaker03 {
   top: 184px;
   left: -132px;
+  z-index: 97;
+}
+#speaker03 .background {
   background: url('../img/speaker03.png') 50% 0 no-repeat;
 }
 #speaker04 {
   top: 95px;
   left: 118px;
+  z-index: 96;
+}
+#speaker04 .background {
   background: url('../img/speaker04.png') 50% 0 no-repeat;
 }
 #speaker05 {
   top: 6px;
   left: 366px;
+  z-index: 95;
+}
+#speaker05 .background {
   background: url('../img/speaker05.png') 50% 0 no-repeat;
 }
 #speaker06 {
   top: -273px;
   left: 614px;
+  z-index: 94;
+}
+#speaker06 .background {
   background: url('../img/speaker06.png') 50% 0 no-repeat;
 }
 #speaker07 {
   top: -276px;
   left: -130px;
+  z-index: 93;
+}
+#speaker07 .background {
   background: url('../img/speaker07.png') 50% 0 no-repeat;
 }
 #speaker08 {
   top: -365px;
   left: 118px;
+  z-index: 92;
+}
+#speaker08 .background {
   background: url('../img/speaker08.png') 50% 0 no-repeat;
 }
 #speaker09 {
   top: -463px;
   left: 614px;
+  z-index: 90;
+}
+#speaker09 .background {
   background: url('../img/speaker09.png') 50% 0 no-repeat;
 }
 #speaker10 {
   top: -552px;
   left: 366px;
+  z-index: 90;
+}
+#speaker10 .background {
   background: url('../img/speaker10.png') 50% 0 no-repeat;
 }
 #speaker11 {
   top: -644px;
   left: -130px;
+  z-index: 89;
+}
+#speaker11 .background {
   background: url('../img/speaker11.png') 50% 0 no-repeat;
 }
 #speaker12 {
   top: -733px;
   left: 118px;
+  z-index: 88;
+}
+#speaker12 .background {
   background: url('../img/speaker12.png') 50% 0 no-repeat;
 }
 #speaker13 {
   top: -822px;
   left: 366px;
+  z-index: 87;
+}
+#speaker13 .background {
   background: url('../img/speaker00.png') 50% 0 no-repeat;
 }
 #speaker14 {
   top: -1101px;
   left: 614px;
-  background: url('../img/speaker00.png') 50% 0 no-repeat;
+  z-index: 86;
+}
+#speaker14 .background {
+  background: url('../img/speaker14.png') 50% 0 no-repeat;
 }
 #speaker15 {
   top: -1104px;
   left: -130px;
-  background: url('../img/speaker00.png') 50% 0 no-repeat;
+  z-index: 84;
+}
+#speaker15 .background {
+  background: url('../img/speaker15.png') 50% 0 no-repeat;
 }
 #speaker16 {
   top: -1279px;
   left: 614px;
-  background: url('../img/speaker16.png') 50% 0 no-repeat;
+  z-index: 85;
+}
+#speaker16 .background {
+  background: url('../img/speaker00.png') 50% 0 no-repeat;
+}
+#program {
+  position: relative;
+  top: 2800px;
+}
+#sessionmenu {
+  position: relative;
+  height: 0;
+  font-family: 'Rokkitt', sans-serif;
+}
+#sessionmenu h1 {
+  font-size: 67px;
+}
+#sessionmenu ul {
+  margin-top: 20px;
+}
+#sessionmenu li {
+  margin: 30px 0;
+}
+#sessionmenu li a {
+  color: #1f1e1c;
+  font-family: "Quicksand";
+  font-size: 22px;
+  font-style: italic;
+  text-decoration: none;
+  padding: 0 0 50px 55px;
+}
+#sessionmenu li a:hover {
+  text-decoration: underline;
+}
+#sessionmenu .chooser {
+  position: absolute;
+  top: 350px;
+}
+#sessionmenu .active a {
+  background: url('../img/tile_small_red.png') 0 18px no-repeat;
+}
+#sessionmenu a {
+  background: url('../img/tile_small_bluegray.png') 0 18px no-repeat;
+}
+.msie #program {
+  position: relative;
+  top: 0;
+}
+.trainings {
+  z-index: 1;
+  position: absolute;
+  height: 0px;
+  top: 150px;
+  left: 0;
+}
+.sessions {
+  z-index: 0;
+  position: absolute;
+  height: 0px;
+  top: 930px;
+  left: 0;
+}
+#training1 {
+  position: relative;
+  top: 0;
+  left: 0px;
+  z-index: 50;
+}
+#training2 {
+  position: relative;
+  top: -80px;
+  left: 220px;
+  z-index: 51;
 }
 #cloud1 {
   z-index: 8;
-  top: -1720px;
+  top: -500px;
   position: relative;
   height: 1300px;
 }
 #cloud2 {
   z-index: 8;
-  top: -2420px;
+  top: -1200px;
   position: relative;
   height: 1260px;
 }
 #planecontainer {
   position: relative;
   z-index: 20;
-  top: -2650px;
+  top: -930px;
   left: 200px;
   height: 643px;
   width: 764px;
@@ -383,17 +927,19 @@ b {
   height: 643px;
   width: 764px;
   background: url(../img/plane.png) no-repeat;
+  cursor: pointer;
 }
 #bookflight {
+  display: none;
   position: absolute;
-  top: 254px;
-  left: 152px;
+  top: 251px;
+  left: 151px;
   width: 982px;
   height: 367px;
   background: url(../img/tile_huge_darkred.png) no-repeat;
   color: white;
   padding-top: 100px;
-  font-size: 110%;
+  font-size: 70%;
   line-height: 120%;
 }
 #bookflight b {
@@ -433,12 +979,13 @@ b {
 #location {
   z-index: 3;
   position: relative;
-  top: -2600px;
+  top: -2200px;
   height: 1600px;
 }
 #locationmenu {
   font-family: 'Rokkitt', sans-serif;
-  top: 500px;
+  top: 5900px;
+  width: 350px;
   position: relative;
 }
 #locationmenu h1 {
@@ -482,7 +1029,7 @@ b {
 
   text-align: center;
 }
-#palais span {
+#palais span.black {
   top: -30px;
   position: relative;
   background-color: #1f1e1c;
@@ -501,7 +1048,12 @@ b {
 #palaisliechtenstein {
   top: 350px;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
+  font-size: 73%;
+}
+#palaisliechtenstein h2,
+#palaisliechtenstein p {
+  margin: 0;
 }
 .palais {
   width: 960px;
@@ -530,10 +1082,19 @@ b {
   line-height: 1.2;
   text-align: center;
 }
+#palaislayercontainer {
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  height: 200px;
+  width: 980px;
+  margin-left: -490px;
+}
 #palaislayertop {
   width: 100%;
   height: 0px;
-  margin-top: -108px;
+  /*	margin-top: -108px;
+*/
   background: url(../img/tile_huge_red_01.png) 50% top no-repeat;
 }
 #palaislayerbottom {
@@ -543,7 +1104,7 @@ b {
 }
 #palaisclick {
   display: none;
-  z-index: 11;
+  z-index: 21;
   top: 396px;
   left: 50%;
   margin-left: -17px;
@@ -553,7 +1114,7 @@ b {
 }
 #palaisclick2 {
   display: none;
-  z-index: 10;
+  z-index: 21;
   top: 324px;
   left: 50%;
   margin-left: -90px;
@@ -564,29 +1125,9 @@ b {
 #bottom {
   z-index: 8;
   position: relative;
-  top: -3000px;
+  top: -200px;
   height: 1485px;
   font-size: 22px;
-}
-#bottom .content {
-  z-index: 8;
-  position: relative;
-  top: -7200px;
-}
-#bottom h2 {
-  margin: 20px 0 20px 0;
-  font-size: 300%;
-  font-family: 'Rokkitt', sans-serif;
-  font-weight: bold;
-}
-#bottom h3 {
-  margin: 35px 0 0 0;
-  font-size: 115%;
-  font-family: 'Rokkitt', sans-serif;
-  font-weight: bold;
-}
-#bottom p {
-  margin: 10px 0 10px 0;
 }
 #bottom1 {
   position: relative;
@@ -608,10 +1149,11 @@ b {
   text-align: right;
   color: #f6f6f1;
   padding-right: 30px;
+  top: 6520px;
 }
 #accomodation {
   position: relative;
-  top: 240px;
+  top: 6740px;
   font-size: 22px;
 }
 #accomodation h3 {
@@ -704,7 +1246,7 @@ b {
 }
 #restaurants {
   position: relative;
-  top: 180px;
+  top: 6690px;
 }
 .restaurant {
   float: left;
@@ -736,7 +1278,7 @@ b {
 }
 #leisure {
   position: relative;
-  top: 420px;
+  top: 6920px;
   color: #7bf9d1;
 }
 #leisure h3 {
@@ -795,6 +1337,60 @@ b {
   width: 291px;
   background: url(../img/hole3.png) no-repeat;
 }
+#sponsors {
+  position: relative;
+  top: 9530px;
+}
+#footer {
+  position: relative;
+  top: 9600px;
+  color: #ddd;
+  float: left;
+}
+#footer a {
+  color: #ddd;
+}
+#msft {
+  position: absolute;
+  top: 1071px;
+  left: 71px;
+  height: 400px;
+  width: 400px;
+  background: url(../img/diamond.png) no-repeat;
+}
+#msft img {
+  position: relative;
+  top: 20px;
+  left: 240px;
+}
+#netural {
+  position: absolute;
+  top: 1140px;
+  left: 670px;
+}
+#karriere {
+  position: absolute;
+  top: 1340px;
+  left: 50px;
+}
+#gentics {
+  position: absolute;
+  top: 1451px;
+  left: 331px;
+  height: 400px;
+  width: 400px;
+  background: url(../img/diamond.png) no-repeat;
+}
+#gentics img {
+  position: relative;
+  top: 70px;
+  left: 260px;
+}
+#fullstackoptimization {
+  position: absolute;
+  top: 1570px;
+  left: 120px;
+}
 .nofixed #cinema {
   height: 12000px;
 }
@@ -809,24 +1405,25 @@ b {
   top: 185px;
 }
 .nofixed #paperbackground {
-  top: -700px;
+  position: relative;
+  top: -860px;
   height: 300px;
 }
 .nofixed #speakers {
   top: -1300px;
 }
 .nofixed #cloud1 {
-  top: -1500px;
+  top: -440px;
 }
 .nofixed #cloud2 {
-  top: -1640px;
+  top: -624px;
 }
 .nofixed #plane {
-  top: -3200px;
+  top: -2900px;
 }
 .nofixed #map {
   position: relative;
-  top: -690px;
+  top: -200px;
 }
 .nofixed .palais {
   height: 0px;
@@ -837,7 +1434,7 @@ b {
   padding-top: 0px;
 }
 .nofixed #palais {
-  top: -1560px;
+  top: -1072px;
   position: relative;
   z-index: 9;
 }
@@ -845,25 +1442,146 @@ b {
   cursor: pointer;
 }
 .nofixed #palaisliechtenstein {
-  top: -1645px;
   z-index: 9;
-  position: relative;
+  top: 30px;
+  left: -30px;
+  position: absolute;
 }
 .nofixed #locationmenu {
-  top: -1360px;
+  top: 6040px;
 }
 .nofixed #location {
   top: -700px;
   z-index: 5;
 }
 .nofixed #bottom {
-  top: -2730px;
+  top: -770px;
+}
+.nofixed #sessionbackground {
+  height: 1800px;
+}
+.nofixed #planecontainer {
+  top: 3170px;
+}
+.nofixed #directions {
+  position: relative;
+  top: 6500px;
+  left: 0;
+}
+.nofixed #accomodation {
+  position: relative;
+  top: 6700px;
+  left: 0;
+  width: 960px;
+}
+.nofixed #accomodation .partnerhotel {
+  position: absolute;
 }
 .nofixed #restaurants {
-  top: 180px;
+  top: 6680px;
+  left: 0;
 }
 .nofixed #leisure {
-  top: 460px;
+  top: 6900px;
+  left: 0;
+}
+.nofixed #sponsors {
+  width: 960px;
+  top: 9530px;
+  left: 0;
+}
+.nofixed #footer {
+  top: 9700px;
+}
+.fised.msie #plane {
+  top: -6300px;
+}
+.fised.msie #map {
+  top: -3500px;
+}
+.fised.msie #palais {
+  top: -4372px;
+  position: relative;
+  z-index: 9;
+}
+.fised.msie #palaislayercontainer {
+  top: 5px;
+}
+.fised.msie #palaisliechtenstein {
+  /*		top: -4372px;
+*/
+  z-index: 9;
+  top: 30px;
+  left: -320px;
+  position: absolute;
+}
+.fised.msie #locationmenu {
+  position: relative;
+  top: 3240px;
+}
+.fised.msie #locationmenu #planeclick {
+  height: 400px;
+  width: 800px;
+  position: absolute;
+  top: -500px;
+  left: 100px;
+  cursor: pointer;
+}
+.fised.msie #bookflight {
+  position: relative;
+  top: -6050px;
+}
+.fised.msie #bookflight p,
+.fised.msie #bookflight h3 {
+  left: 80px;
+  position: relative;
+}
+.fised.msie #bottom {
+  top: -4070px;
+  left: 0;
+}
+.fised.msie #directions {
+  top: 3750px;
+  left: 0;
+}
+.fised.msie #accomodation {
+  position: relative;
+  top: 3980px;
+  left: 0;
+  width: 960px;
+}
+.fised.msie #accomodation .partnerhotel {
+  position: absolute;
+  top: 190px;
+  left: 340px;
+}
+.fised.msie #accomodation #hotel3 {
+  top: -20px;
+}
+.fised.msie #accomodation .premiumhotel .stars li,
+.fised.msie #accomodation .hotel .stars li {
+  position: relative;
+  top: 0px;
+}
+.fised.msie #restaurants {
+  top: 4150px;
+  left: 0;
+}
+.fised.msie #leisure {
+  top: 4350px;
+  left: 0;
+}
+.fised.msie .poi {
+  position: relative;
+  top: 0px;
+}
+.fised.msie #sponsors {
+  width: 960px;
+  top: 4230px;
+  left: 0;
+}
+.fised.msie #footer {
+  top: 7100px;
 }
 .fixed #map {
   position: fixed;
